@@ -5,3 +5,5 @@ const form = document.querySelector(".ContactForm");
 form.addEventListener("submit", (event) => {
   SubmitForm(event);
 });
+
+// console.log("first")

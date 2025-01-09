@@ -23,10 +23,11 @@ export const submitSignUp = async (event) => {
     setTimeout(() => {
       window.location.href = "/";
     }, 1500);
+
+    // show logOut button
+    const button = document.querySelector(".links-header");
+    button.innerHTML = `
+    <div className="links-header flex"> <a href="/" class='logoutBtn'>logout</a>
+     </div>`;
   }
-  // show logOut button
-  const button = document.querySelector(".links-header");
-  button.innerHTML = `
-  <div className="links-header flex"> <a href="/" class='logoutBtn'>logout</a>
-   </div>`;
 };

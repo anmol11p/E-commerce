@@ -1,6 +1,18 @@
 // vite.config.js
 import { defineConfig } from "vite";
-
+import { resolve } from "path";
 export default defineConfig({
-  base: "/E-commerce/", // This ensures Vite generates links relative to this base path
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "about.html"),
+        contact: resolve(__dirname, "contact.html"),
+        products: resolve(__dirname, "products.html"),
+        addToCart: resolve(__dirname, "addToCart.html"),
+        login: resolve(__dirname, "login.html"),
+        signup: resolve(__dirname, "signup.html"),
+      },
+    },
+  },
 });

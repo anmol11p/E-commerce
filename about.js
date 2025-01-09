@@ -1,8 +1,8 @@
 import { getCartProductFromLs } from "./getCartProductFromLs";
+import leftData from "./api/whyChooseLeft.json";
 import { whyChooseLeft } from "./whyChooseLeft";
 import { whyChooseRight } from "./WhyChooseRight";
-import rightData from "../src/api/whyChooseRight.json";
-import leftData from "../src/api/whyChooseLeft.json";
+import rightData from "./api/whyChooseRight.json";
 import { getLoginUserInfo } from "./Login User/getloginuserInfo";
 
 getCartProductFromLs();
@@ -15,3 +15,4 @@ let token = localStorage.getItem("token");
 if (token) {
   getLoginUserInfo(token);
 }
+console.log("first")

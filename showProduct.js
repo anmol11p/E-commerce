@@ -6,7 +6,7 @@ export const showProduct = (product) => {
   if (!product) {
     return false;
   }
-  product.forEach((currElem,index) => {
+  product.forEach((currElem, index) => {
     const {
       actual_price,
       category,
@@ -17,7 +17,6 @@ export const showProduct = (product) => {
       total_stock_available,
       id,
     } = currElem;
-
     let productClone = document.importNode(productTemplate.content, true);
     productClone.querySelector(".product-category").textContent = category;
     productClone.querySelector(".prdctImg").src = image;

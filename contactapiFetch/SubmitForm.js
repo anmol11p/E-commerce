@@ -3,7 +3,7 @@ import { Toast } from "../Toast/showPopup";
 
 export const SubmitForm = async (event) => {
   event.preventDefault();
-  let form=event.target;
+  let form = event.target;
   const formData = new FormData(form);
   const full_Name = formData.get("full_Name");
   const email = formData.get("email");
@@ -16,6 +16,6 @@ export const SubmitForm = async (event) => {
   //! alert in frontEnd
   if (response) {
     Toast("contact", response[0] || response.message);
-    form.reset()
+    form.reset();
   }
 };

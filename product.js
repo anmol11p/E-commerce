@@ -7,11 +7,9 @@ let token = localStorage.getItem("token");
 if (token) {
   getLoginUserInfo(token);
 }
-
 const getProductDetails = async () => {
   try {
     let resp = await getProductData();
-
     if (resp && resp.length > 1) {
       showProduct(resp);
     }
