@@ -14,12 +14,12 @@ export const submitLoginForm = async (event) => {
   if (token) {
     Toast("login", response);
     setTimeout(() => {
-      window.location.href = "/";
+      window.location.href = "/Ecommerce/";
     }, 1500);
     // show logOut button
     const button = document.querySelector(".links-header");
     button.innerHTML = `
-  <div className="links-header flex"> <a href="/" class='logoutBtn'>logout</a>
+  <div className="links-header flex"> <a href="/Ecommerce/" class='logoutBtn'>logout</a>
    </div>`;
   }
 };

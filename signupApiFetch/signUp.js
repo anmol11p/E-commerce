@@ -7,5 +7,5 @@ form.addEventListener("submit", (event) => {
 });
 let token = localStorage.getItem("token");
 if (token) {
-  window.location.href = "/";
+  window.location.href = "/Ecommerce/";
 }
