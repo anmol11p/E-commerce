@@ -1,0 +1,3 @@
+import{b as i,T as l}from"./getCartProductFromLs-DZ0_6J83.js";import"./commonJs-CeZzMC5a.js";const u=async s=>{try{const t=await i.post("https://ecommerce-backend-kdg6.onrender.com/contact",s);if(t.status===201)return t.data}catch(e){return e.status===400?e.response.data.extraDetails:(console.log(e.message),e.message.message)}},g=async s=>{s.preventDefault();let e=s.target;const t=new FormData(e),o=t.get("full_Name"),r=t.get("email"),n=t.get("subject"),c=t.get("message"),m={full_Name:o,email:r,subject:n,message:c};//! send Data to Backend
+let a=await u(m);//! alert in frontEnd
+a&&(l("contact",a[0]||a.message),e.reset())},f=document.querySelector(".ContactForm");f.addEventListener("submit",s=>{g(s)});

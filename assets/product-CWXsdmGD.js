@@ -1,0 +1,1 @@
+import{b as e}from"./getCartProductFromLs-DZ0_6J83.js";const o=async()=>{try{const t=await e.get("https://ecommerce-backend-kdg6.onrender.com/product");if(t.status===200)return t.data}catch(r){return r.response}};export{o as g};

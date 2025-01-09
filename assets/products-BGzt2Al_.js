@@ -1,0 +1,1 @@
+import{a as r,g as e}from"./getCartProductFromLs-DZ0_6J83.js";import{s as a}from"./showProduct-BgfqfYoG.js";import{g as s}from"./product-CWXsdmGD.js";r();let o=localStorage.getItem("token");o&&e(o);const g=async()=>{try{let t=await s();t&&t.length>1&&a(t)}catch(t){console.log(t)}};g();
